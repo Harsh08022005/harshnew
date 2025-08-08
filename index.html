@@ -1,11 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #222;
+    }
+    header {
+      background-color: #5061f3;
+      color: #fff;
+      padding: 40px 0 60px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.25rem;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 25px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: opacity 0.2s;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+    .container {
+      max-width: 1100px;
+      margin: -40px auto 0 auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(80,97,243,0.12);
+      padding: 40px 30px 60px 30px;
+      min-height: 400px;
+      position: relative;
+      z-index: 10;
+    }
+    .features {
+      display: flex;
+      gap: 36px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .feature-card {
+      background: #f6f8ff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(80,97,243,0.08);
+      padding: 32px 28px;
+      width: 290px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-7px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(80,97,243,0.15);
+    }
+    .feature-card h3 {
+      margin: 0 0 10px 0;
+      color: #5061f3;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .feature-card p {
+      font-size: 1rem;
+      color: #444;
+      margin: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 0 10px 0;
+      color: #7c7c7c;
+      font-size: 0.97rem;
+    }
+    @media (max-width: 900px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        padding: 24px 8px 30px 8px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to indira college of commerece and science pune</h1>
+  <header>
+    <h1>Welcome to My Awesome Website</h1>
+    <p>Modern, responsive, and beautiful landing page built with pure HTML & CSS.</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <section class="features">
+      <div class="feature-card">
+        <h3>🚀 Fast Performance</h3>
+        <p>Optimized for speed with clean, minimal code and blazing fast load times.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📱 Responsive Design</h3>
+        <p>Looks great on all devices—desktop, tablet, and mobile.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🎨 Modern UI</h3>
+        <p>Fresh, modern look using gradients, rounded corners, and subtle shadows.</p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 My Awesome Website &mdash; Built with ❤️ by You
+  </footer>
 </body>
 </html>
